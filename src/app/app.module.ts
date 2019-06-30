@@ -13,6 +13,9 @@ import { ServiciosComponent } from './components/servicios/servicios.component';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireAuth} from '@angular/fire/auth';
+import { LoginComponent } from './components/user/login/login.component';
+import { RegisterComponent } from './components/user/register/register.component';
+import { BarraMenuComponent } from './components/barra-menu/barra-menu.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { AngularFireAuth} from '@angular/fire/auth';
     ReservacionComponent,
     ProductosComponent,
     GaleriaComponent,
-    ServiciosComponent
+    ServiciosComponent,
+    LoginComponent,
+    RegisterComponent,
+    BarraMenuComponent
   ],
   imports: [
     BrowserModule,
