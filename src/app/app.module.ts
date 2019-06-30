@@ -10,6 +10,9 @@ import { ReservacionComponent } from './components/reservacion/reservacion.compo
 import { ProductosComponent } from './components/productos/productos.component';
 import { GaleriaComponent } from './components/galeria/galeria.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { AngularFireAuth} from '@angular/fire/auth';
 
 @NgModule({
   declarations: [
@@ -24,9 +27,11 @@ import { ServiciosComponent } from './components/servicios/servicios.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule,
+    AngularFireDatabaseModule
   ],
-  providers: [],
+  providers: [AngularFireAuth],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
