@@ -11,6 +11,7 @@
 /node_modules
 #Archivo por vulnerabilidad
 package-lock.json
+/src/environments
 
 # profiling files
 chrome-profiler-events.json
