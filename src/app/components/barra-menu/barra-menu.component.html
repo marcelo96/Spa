@@ -1,1 +1,14 @@
-<p>barra-menu works!</p>
+<div class="container">
+    <a routerLink="/">Home</a>
+    <a routerLink="/nosotros">Nosotros</a>
+    <a routerLink="/productos">Productos</a>
+    <a routerLink="/servicios">Servicios</a>
+    <a routerLink="/reservacion">Reservaciones</a>
+    <a routerLink="/galeria">Galeria</a>
+    <a routerLink="/registro">Registrar</a>
+    <a routerLink="/login">Login</a>
+    <button (click)="onLogged()">Comprobar logueo</button>
+    <div *ngIf="logueado">
+        <button (click)="onSignOut()">Salir</button>
+    </div>
+</div>

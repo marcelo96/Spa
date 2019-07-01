@@ -1,4 +1,4 @@
-<form #formLogin="ngForm">
+<form #formLogin="ngForm" (submit)="onLoginEmailPassword()">
     <h1 class="h3 mb-3 font-weight-normal" >Login</h1>
     <div class="alert alert-danger" role="alert">
       Something is wrong!
