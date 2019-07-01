@@ -7,6 +7,8 @@ import { ProductosComponent } from './components/productos/productos.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
 import { ReservacionComponent } from './components/reservacion/reservacion.component';
 import { GaleriaComponent } from './components/galeria/galeria.component';
+import { RegisterComponent } from './components/user/register/register.component';
+import { LoginComponent } from './components/user/login/login.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -15,6 +17,8 @@ const routes: Routes = [
   {path: 'servicios', component: ServiciosComponent},
   {path: 'reservacion', component: ReservacionComponent},
   {path: 'galeria', component: GaleriaComponent},
+  {path: 'registro', component: RegisterComponent},
+  {path: 'login', component: LoginComponent},
   {path: '**', component: Page404Component}
 ];
 

@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +17,8 @@ import { AngularFireAuth} from '@angular/fire/auth';
 import { LoginComponent } from './components/user/login/login.component';
 import { RegisterComponent } from './components/user/register/register.component';
 import { BarraMenuComponent } from './components/barra-menu/barra-menu.component';
+import { environment } from '../environments/environment';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,13 +32,15 @@ import { BarraMenuComponent } from './components/barra-menu/barra-menu.component
     ServiciosComponent,
     LoginComponent,
     RegisterComponent,
-    BarraMenuComponent
+    BarraMenuComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule,
-    AngularFireDatabaseModule
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule,
+    FormsModule
   ],
   providers: [AngularFireAuth],
   bootstrap: [AppComponent]
